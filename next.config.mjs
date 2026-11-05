@@ -1,17 +1,16 @@
+import createMDX from '@next/mdx';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ytimg.com",
-      },
-      {
-        protocol: "https",
-        hostname: "iili.io",
-      },
-    ],
-  },
+  // Everything (including the "Ask my portfolio" chat) runs client-side,
+  // so the site can be exported as plain static files to /out.
+  output: 'export',
+  trailingSlash: true,
+  images: { unoptimized: true },
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  reactStrictMode: true,
+  poweredByHeader: false,
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+export default withMDX(nextConfig);

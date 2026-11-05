@@ -1,0 +1,15 @@
+import type { L } from '@/lib/types';
+
+export type Verdict = 'yes' | 'meh' | 'no';
+
+/** Design rationale shown in the playable cross-sell prototype (and indexed by the chat). */
+export const WHY: Record<string, { v: Verdict; t: L }> = {
+  inline: { v: 'yes', t: { en: 'Inside the cart, right after the products it complements. It reads as part of the trip, not as an ad, and adds zero steps. My default.', es: 'Dentro del carrito, justo después de los productos que complementa. Se lee como parte del viaje, no como publicidad, y no suma pasos. Mi default.' } },
+  sidebar: { v: 'meh', t: { en: 'Beside the summary. Low friction, but it competes with the total on desktop and drops below the fold on mobile — it starts to read like a banner. OK for secondary offers.', es: 'Al costado del resumen. Poca fricción, pero en desktop compite con el total y en mobile queda debajo del fold — empieza a leerse como un banner. Sirve para ofertas secundarias.' } },
+  interstitial: { v: 'no', t: { en: 'A step between the cart and payment. Impossible to miss — and that’s the problem: it adds a step at the moment of highest intent. I’d reserve it for something critical and test it hard.', es: 'Un paso entre el carrito y el pago. Imposible no verlo — y ese es el problema: suma un paso en el momento de mayor intención. Lo reservaría para algo crítico y lo testearía a fondo.' } },
+  off: { v: 'yes', t: { en: 'The traveler decides. Lower attach rate on paper, but every add-on is a real choice: fewer refunds, fewer complaints, more trust in the next purchase.', es: 'Decide el viajero. Menos attach rate en el papel, pero cada add-on es una elección real: menos reembolsos, menos reclamos y más confianza para la próxima compra.' } },
+  on: { v: 'no', t: { en: 'Pre-checked paid extras are a classic dark pattern (“sneak into basket”) and are banned in the EU (Consumer Rights Directive, art. 22). Short-term attach, long-term distrust. Never.', es: 'Los extras pagos pretildados son un dark pattern clásico (“sneak into basket”) y están prohibidos en la UE (Directiva de Derechos del Consumidor, art. 22). Attach de corto plazo, desconfianza de largo. Nunca.' } },
+  total: { v: 'meh', t: { en: 'One honest number. Clear — but it gives no reason to add it now instead of later.', es: 'Un número honesto. Claro — pero no da ningún motivo para sumarlo ahora y no después.' } },
+  perDay: { v: 'meh', t: { en: '“Per day” feels smaller and helps compare long rentals, but it hides the real cost at the moment of deciding. Only with the total right next to it.', es: '“Por día” se siente más chico y ayuda a comparar alquileres largos, pero esconde el costo real en el momento de decidir. Solo con el total al lado.' } },
+  bundle: { v: 'yes', t: { en: 'Show the separate price and what you save by adding it to this trip. A real reason to act now — as long as the reference price is real. It’s the cart’s promise: save by buying together.', es: 'Mostrar el precio por separado y cuánto ahorrás sumándolo a este viaje. Un motivo real para actuar ahora — siempre que el precio de referencia sea real. Es la promesa del carrito: ahorrar comprando junto.' } },
+};
