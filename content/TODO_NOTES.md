@@ -1,0 +1,11 @@
+## Editorial rules now in place (from Nacho, 19 Oct 2026)
+
+- **No numbers on the site.** Impact is described qualitatively (e.g. “first offline feature in the Despegar app”, “built from scratch”). The only figure shown is Despegar’s public “30 million+ customers” (press releases). The previous site’s metrics (+18% conversion, 45% SOFIA adoption, etc.) are not used anywhere.
+- **No Despegar-specific leadership details** (rituals, stories) — those are for interviews. The site keeps the general principles from his LinkedIn “About”.
+- **Testimonials, CV link and “open to”** are intentionally left off for now. To bring testimonials back, see git history of `components/Sections.tsx` / `content/home.ts` or ask for the section to be re-added.
+- **Photo:** real photo in `public/nacho-*.avif|webp` + `public/nacho.jpg`. If those files are removed, the portrait and hero avatar simply don’t render (checked at build time).
+
+## Still worth a quick read-through by Nacho
+
+- The **prototype rationale** (home page, “Cross-sell, one decision at a time”) is written as his design judgment — make sure he agrees with every “why”.
+- The **key-decision cards** in the case studies describe publicly launched product behaviour, phrased generically.

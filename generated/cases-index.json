@@ -1,0 +1,444 @@
+{
+ "chunks": [
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "Context",
+   "id": "en-context",
+   "text": "Despegar is Latin America’s leading travel-tech company, with more than 30 million customers. For most of its history, a trip was bought the way the catalog was organized: a flight here, a hotel there, a package if that exact combination existed. Each product had its own funnel.\nIn December 2025 Despegar launched its shopping cart, on web and app: one place to combine flights, hotels (even several, on different dates), cars, transfers and activities, and pay for everything in a single purchase, with extra discounts for buying together. Despegar presents it as the first online tool of its kind in the travel industry. It’s integrated with SOFIA, the company’s generative-AI assistant, and in 2026 it launched in Brazil as Decolar’s Carrinho de Compras."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "My role",
+   "id": "en-my-role",
+   "text": "I returned to Despegar in September 2025 as UX Manager, leading a team of 3 designers (2 senior, 1 semi-senior). Together with the Cart & Cross-sell squad (product and engineering) we carry the vision of the shopping cart and cross-selling at Despegar.\nWhen I arrived, the cart was at a very early stage. My contribution was a different perspective: new ways of doing things, and thinking outside the box about what buying a whole trip online could be."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "The problem",
+   "id": "en-the-problem",
+   "text": "Selling a trip instead of products sounds obvious until you design it:\n• More in the cart, without a heavier checkout. Every product type brings its own rules (dates, passengers, conditions, payment options) and they all have to fit in one clear purchase.\n• Cross-sell that helps instead of nags. A transfer or a car is useful to someone who just booked a flight and a hotel, when it shows up as part of their trip, not as an interruption.\n• Savings people understand. “Buy together and save” only works if the saving is clear."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "How we work",
+   "id": "en-how-we-work",
+   "text": "This is joint work: design, product and engineering in the same squad, shaping one vision instead of handing off screens. As I wrote when the cart launched: it’s a cart unique in the industry, and we’re excited to keep building and improving it with the help and feedback of our users."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "Key decisions",
+   "id": "en-key-decisions",
+   "text": "Flexibility over a fixed funnel. We chose: Travelers can add or remove products at any moment. Instead of: A linear flow where the combination is decided upfront. \nThe trip people have in their heads rarely matches a pre-built package, so the cart adapts to the trip, not the other way around.\n \n A cart shaped like the trip. We chose: One purchase can hold several hotels on different dates, plus flights, cars, transfers and activities. Instead of: One flight + one hotel, the classic package shape. \nReal trips have legs. The cart has to show each leg of your trip.\n \n Smart combinations. We chose: Combine products smartly to maximize the traveler’s discounts. Instead of: Pricing each product on its own. \nBuying together should pay off, and the traveler should be able to see it."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "en",
+   "heading": "Outcome",
+   "id": "en-outcome",
+   "text": "• Launched in December 2025 on web and app, then in Brazil (Decolar) in 2026.\n• Presented by Despegar as the first online tool of its kind in the travel industry, integrated with SOFIA.\n• And it keeps evolving: the squad keeps iterating on the cart and cross-sell with what we learn from travelers."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "Contexto",
+   "id": "es-contexto",
+   "text": "Despegar es la empresa de tecnología de viajes líder en Latinoamérica, con más de 30 millones de clientes. Durante casi toda su historia, un viaje se compraba como estaba organizado el catálogo: un vuelo por acá, un hotel por allá, un paquete si esa combinación existía. Cada producto tenía su propio funnel.\r\n\r\nEn diciembre de 2025 Despegar lanzó su carrito de compras, en web y app: un solo lugar para combinar vuelos, hoteles (incluso varios, en fechas distintas), autos, traslados y actividades, y pagar todo en una única compra, con descuentos extra por comprar junto. Despegar lo presenta como la primera herramienta online de su tipo en la industria de viajes. Está integrado con SOFIA, la asistente con IA generativa de la compañía, y en 2026 se lanzó en Brasil como el Carrinho de Compras de Decolar."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "Mi rol",
+   "id": "es-mi-rol",
+   "text": "Volví a Despegar en septiembre de 2025 como UX Manager, liderando un equipo de 3 diseñadores (2 senior, 1 semi-senior). Junto al squad de Carrito y Cross-sell (producto e ingeniería) llevamos la visión del carrito de compras y el cross-selling en Despegar.\r\n\r\nCuando llegué, el carrito estaba en una etapa muy temprana. Mi aporte fue una mirada distinta: nuevas formas de hacer las cosas y pensar fuera de la caja qué podía ser comprar un viaje completo online."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "El problema",
+   "id": "es-el-problema",
+   "text": "Vender un viaje en lugar de productos suena obvio hasta que lo tenés que diseñar:\r• Más cosas en el carrito, sin un checkout más pesado. Cada tipo de producto trae sus reglas (fechas, pasajeros, condiciones, medios de pago) y todo tiene que entrar en una sola compra clara.\r• Un cross-sell que ayude en lugar de molestar. Un traslado o un auto le sirve a quien acaba de reservar vuelo y hotel, cuando aparece como parte de su viaje, no como una interrupción.\r• Un ahorro que se entienda. “Comprá junto y ahorrá” solo funciona si el ahorro es claro."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "Cómo trabajamos",
+   "id": "es-como-trabajamos",
+   "text": "Es un trabajo conjunto: diseño, producto e ingeniería en el mismo squad, construyendo una visión en lugar de pasarse pantallas. Como escribí cuando salió el carrito: es un carrito único en la industria y nos da mucha emoción seguir construyéndolo y mejorándolo con la ayuda y el feedback de nuestros usuarios."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "Decisiones clave",
+   "id": "es-decisiones-clave",
+   "text": "Flexibilidad antes que un funnel fijo. Elegimos: El viajero puede sumar o quitar productos en cualquier momento. En lugar de: Un flujo lineal donde la combinación se decide al principio. \r\nEl viaje que la gente tiene en la cabeza casi nunca coincide con un paquete armado, así que el carrito se adapta al viaje, y no al revés.\r\n \r\n\r\n Un carrito con la forma del viaje. Elegimos: Una sola compra puede tener varios hoteles en fechas distintas, más vuelos, autos, traslados y actividades. En lugar de: Un vuelo + un hotel, la forma clásica del paquete. \r\nLos viajes reales tienen tramos. El carrito tiene que mostrar cada tramo de tu viaje.\r\n \r\n\r\n Combinaciones inteligentes. Elegimos: Combinar productos de forma inteligente para maximizar los descuentos del viajero. En lugar de: Ponerle precio a cada producto por separado. \r\nComprar junto tiene que convenir, y el viajero lo tiene que poder ver."
+  },
+  {
+   "slug": "despegar-cart-cross-sell",
+   "lang": "es",
+   "heading": "Resultado",
+   "id": "es-resultado",
+   "text": "• Lanzado en diciembre de 2025 en web y app, y en Brasil (Decolar) en 2026.\r• Despegar lo presenta como la primera herramienta online de su tipo en la industria de viajes, integrada con SOFIA.\r• Y sigue evolucionando: el squad sigue iterando el carrito y el cross-sell con lo que aprendemos de los viajeros."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "Context",
+   "id": "en-context",
+   "text": "In March 2024 Despegar launched SOFIA, which it describes as the first travel assistant in Latin America to combine generative AI with an incremental and adaptive visual interface. SOFIA accompanies travelers from the moment the idea of a trip appears, through planning and coordination, until they come back home.\r\n\r\nIt’s multimodal: people can write, talk or share images, and it’s available any time, across the region. Under the hood, Despegar built it on GPT-4, OpenAI’s Whisper and AWS."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "My role",
+   "id": "en-my-role",
+   "text": "When I joined Despegar as a Sr. UX/UI Designer, SOFIA didn’t exist. We designed the SOFIA platform from scratch: the conversation, the cards and the voice. As a teammate put it publicly when SOFIA turned one: UX was there from the very beginning."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "The problem",
+   "id": "en-the-problem",
+   "text": "Travel planning is visual, comparative and full of second thoughts. A text box and a wall of text wasn’t going to be enough.\r\n\r\nThe challenge was to make something that feels like a real travel agent: one that starts from a vague desire (“I want to go surfing”), adapts to how you react, and ends in concrete recommendations, without forcing a fixed order of questions."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "How we worked",
+   "id": "en-how-we-worked",
+   "text": "Nobody had a playbook for this technology yet. A teammate summed up the spirit of that first year: the importance of just going for it, even when we didn’t know exactly what or how, and learning on the way everything the technology had to offer."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "Key decisions",
+   "id": "en-key-decisions",
+   "text": "A conversation that builds visual options. We chose: A hybrid interface where the conversation builds visual options (destinations, dates, prices) you can tap. Instead of: A pure chat window. \r\nPeople can drop the chat entirely and just touch visual elements or talk.\r\n \r\n\r\n Meet people in their mode. We chose: Voice, text and images as inputs. Instead of: Text only. \r\nA trip idea can start with a photo or a voice note.\r\n \r\n\r\n No script. We chose: A non-linear conversation that adapts to how the traveler reacts. Instead of: A decision tree with a fixed order of questions. \r\nThat’s what makes it feel like talking to a travel agent.\r\n \r\n\r\n Know when to hand off. We chose: A path to self-serve purchase, or to a person from Despegar for sales or after-sales. Instead of: Keeping people inside the AI at all costs. \r\nHanding off to a person at the right moment makes people trust the assistant more."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "Outcome",
+   "id": "en-outcome",
+   "text": "• Launched across Latin America on 4 March 2024, covered by Business Wire, PR Newswire, Forbes Chile and Forbes Perú.\r• Turned one in 2025, and in December 2025 became part of the purchase itself, integrated into the shopping cart.\r\n\r\n When SOFIA turned one, I admitted publicly: “I won’t deny I miss Sofi.”"
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "en",
+   "heading": "What I learned",
+   "id": "en-what-i-learned",
+   "text": "• Bringing LLMs into an everyday product. A feature real travelers use to plan and buy.\r• Using new technology to solve what the traditional site couldn’t: starting from an idea instead of a search form, and adapting to each person."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Contexto",
+   "id": "es-contexto",
+   "text": "En marzo de 2024 Despegar lanzó SOFIA, que describe como la primera asistente de viajes de Latinoamérica en combinar IA generativa con una interfaz visual incremental y adaptativa. SOFIA acompaña al viajero desde que aparece la idea del viaje, pasando por la planificación y la coordinación, hasta que vuelve a casa.\r\n\r\nEs multimodal: se le puede escribir, hablar o mandar imágenes, y está disponible en cualquier momento, en toda la región. Por dentro, Despegar la construyó sobre GPT-4, Whisper de OpenAI y AWS."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Mi rol",
+   "id": "es-mi-rol",
+   "text": "Cuando entré a Despegar como Sr. UX/UI Designer, SOFIA no existía. Diseñamos la plataforma de SOFIA desde cero: la conversación, las cards y la voz. Como contó públicamente un compañero cuando SOFIA cumplió un año: UX estuvo desde el principio."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "El problema",
+   "id": "es-el-problema",
+   "text": "Planificar un viaje es visual, comparativo y lleno de idas y vueltas. Una caja de texto y un muro de texto no iban a alcanzar.\r\n\r\nEl desafío era hacer algo que se sintiera como una agente de viajes de verdad: que arranque de un deseo vago (“quiero hacer surf”), se adapte a cómo reaccionás y termine en recomendaciones concretas, sin obligarte a un orden fijo de preguntas."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Cómo trabajamos",
+   "id": "es-como-trabajamos",
+   "text": "Nadie tenía todavía un método para esta tecnología. Un compañero resumió el espíritu de ese primer año: la importancia de mandarse a hacer, aunque no supiéramos bien qué ni cómo, y aprender sobre la marcha todo lo que la tecnología tenía para ofrecer."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Decisiones clave",
+   "id": "es-decisiones-clave",
+   "text": "Una conversación que arma opciones visuales. Elegimos: Una interfaz híbrida donde la conversación arma opciones visuales (destinos, fechas, precios) que se pueden tocar. En lugar de: Una ventana de chat pura. \r\nLa gente puede dejar el chat de lado y solo tocar elementos visuales o hablar.\r\n \r\n\r\n Encontrar a la gente en su modo. Elegimos: Voz, texto e imágenes como inputs. En lugar de: Solo texto. \r\nUna idea de viaje puede empezar con una foto o un audio.\r\n \r\n\r\n Sin guion. Elegimos: Una conversación no lineal que se adapta a cómo reacciona el viajero. En lugar de: Un árbol de decisión con un orden fijo de preguntas. \r\nAsí se siente como hablar con una agente de viajes.\r\n \r\n\r\n Saber cuándo derivar. Elegimos: Un camino a la compra autoasistida, o a una persona de Despegar para venta o postventa. En lugar de: Retener a la gente en la IA a cualquier costo. \r\nDerivar a una persona en el momento justo hace que la gente confíe más en la asistente."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Resultado",
+   "id": "es-resultado",
+   "text": "• Lanzada en toda Latinoamérica el 4 de marzo de 2024, con cobertura en Business Wire, PR Newswire, Forbes Chile y Forbes Perú.\r• Cumplió un año en 2025 y en diciembre de 2025 pasó a ser parte de la compra misma, integrada al carrito.\r\n\r\n Cuando SOFIA cumplió un año, lo admití en público: “No voy a negar que la extraño a Sofi”."
+  },
+  {
+   "slug": "sofia-ai-travel-assistant",
+   "lang": "es",
+   "heading": "Qué aprendí",
+   "id": "es-que-aprendi",
+   "text": "• Integrar LLMs en un producto de todos los días. Algo que viajeros reales usan para planificar y comprar.\r• Usar una tecnología nueva para resolver lo que el sitio tradicional de Despegar no podía: arrancar desde una idea en lugar de un buscador, y adaptarse a cada persona."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "en",
+   "heading": "Context",
+   "id": "en-context",
+   "text": "Most travel apps are built for the moment of buying. But the trip itself, the part people actually care about, happens after, often far from home and sometimes without a connection.\r\n\r\nDespegar’s own UX research pointed the same way: managing bookings is the main reason people use a travel app, most travelers use the Despegar app during their trip, and part of the people who open it at the destination do so offline."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "en",
+   "heading": "My role",
+   "id": "en-my-role",
+   "text": "I designed Travel Mode (Modo Viaje) from scratch, from ideation to production, together with my content-design partner (UX writer), as a Sr. UX/UI Designer at Despegar."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "en",
+   "heading": "The problem",
+   "id": "en-the-problem",
+   "text": "When you land in a new city you need three things fast: your bookings, proof that you have them, and what to do next. An app organized around searching and buying doesn’t give you that, and if the connection fails, the most important thing (the voucher) can be out of reach."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "en",
+   "heading": "Key decisions",
+   "id": "en-key-decisions",
+   "text": "A mode that turns on by itself. We chose: An experience that activates automatically when the trip dates arrive. Instead of: Another section buried in “My trips”. \r\nContext changes what matters, so the app changes with it, without the traveler having to look for it.\r\n \r\n\r\n Works without a connection. We chose: Bookings and vouchers available without a connection. Instead of: Assuming connectivity and showing an error state. \r\nThe worst moment for a spinner is at a hotel desk or a border. Travel Mode became the first Despegar app feature to work offline.\r\n \r\n\r\n Context that earns its place. We chose: Nearby places, events, destination info and offers on cars and activities. Instead of: A generic content feed. \r\nThe bar for showing anything during a trip is: is it useful here and now?"
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "en",
+   "heading": "Outcome",
+   "id": "en-outcome",
+   "text": "• Shipped in the Despegar app: the first feature that works without a connection, activating on its own when the trip begins.\r• A 100% native solution, new for Despegar, designed from zero.\r• It turned the app from a place to buy into a companion during the trip, with bookings, vouchers, nearby places, events and offers at hand."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "es",
+   "heading": "Contexto",
+   "id": "es-contexto",
+   "text": "La mayoría de las apps de viajes están pensadas para el momento de comprar. Pero el viaje en sí, la parte que a la gente realmente le importa, pasa después, muchas veces lejos de casa y a veces sin conexión.\r\n\r\nEl propio research de UX de Despegar iba en la misma dirección: gestionar las reservas es el motivo principal para usar una app de viajes, la mayoría de los viajeros usa la app de Despegar durante el viaje, y parte de quienes la abren en destino lo hacen offline."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "es",
+   "heading": "Mi rol",
+   "id": "es-mi-rol",
+   "text": "Diseñé Modo Viaje desde cero, de la ideación a producción, junto a mi partner de content design (UX writer), como Sr. UX/UI Designer en Despegar."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "es",
+   "heading": "El problema",
+   "id": "es-el-problema",
+   "text": "Cuando aterrizás en una ciudad nueva necesitás tres cosas rápido: tus reservas, la prueba de que las tenés y qué hacer después. Una app organizada alrededor de buscar y comprar no te da eso, y si falla la conexión, lo más importante (el voucher) puede quedar fuera de alcance."
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "es",
+   "heading": "Decisiones clave",
+   "id": "es-decisiones-clave",
+   "text": "Un modo que se activa solo. Elegimos: Una experiencia que se activa sola cuando llegan las fechas del viaje. En lugar de: Otra sección enterrada en “Mis viajes”. \r\nEl contexto cambia lo que importa, así que la app cambia con él, sin que el viajero lo tenga que buscar.\r\n \r\n\r\n Funciona sin conexión. Elegimos: Reservas y vouchers disponibles sin conexión. En lugar de: Asumir conectividad y mostrar un estado de error. \r\nEl peor momento para un spinner es en el mostrador de un hotel o en una frontera. Modo Viaje fue la primera funcionalidad de la app de Despegar en funcionar offline.\r\n \r\n\r\n Contexto que se gana su lugar. Elegimos: Lugares cercanos, eventos, información del destino y ofertas de autos y actividades. En lugar de: Un feed de contenido genérico. \r\nLa vara para mostrar algo durante un viaje es: ¿sirve acá y ahora?"
+  },
+  {
+   "slug": "travel-mode",
+   "lang": "es",
+   "heading": "Resultado",
+   "id": "es-resultado",
+   "text": "• En producción en la app de Despegar: la primera funcionalidad que funciona sin conexión, que se activa sola cuando empieza el viaje.\r• Una solución 100% nativa, nueva para Despegar, diseñada desde cero.\r• Convirtió a la app de un lugar para comprar en una compañera durante el viaje, con reservas, vouchers, lugares cercanos, eventos y ofertas a mano."
+  }
+ ],
+ "toc": {
+  "despegar-cart-cross-sell": {
+   "en": [
+    {
+     "id": "en-context",
+     "heading": "Context"
+    },
+    {
+     "id": "en-my-role",
+     "heading": "My role"
+    },
+    {
+     "id": "en-the-problem",
+     "heading": "The problem"
+    },
+    {
+     "id": "en-how-we-work",
+     "heading": "How we work"
+    },
+    {
+     "id": "en-key-decisions",
+     "heading": "Key decisions"
+    },
+    {
+     "id": "en-outcome",
+     "heading": "Outcome"
+    },
+    {
+     "id": "en-sources",
+     "heading": "Sources"
+    }
+   ],
+   "es": [
+    {
+     "id": "es-contexto",
+     "heading": "Contexto"
+    },
+    {
+     "id": "es-mi-rol",
+     "heading": "Mi rol"
+    },
+    {
+     "id": "es-el-problema",
+     "heading": "El problema"
+    },
+    {
+     "id": "es-como-trabajamos",
+     "heading": "Cómo trabajamos"
+    },
+    {
+     "id": "es-decisiones-clave",
+     "heading": "Decisiones clave"
+    },
+    {
+     "id": "es-resultado",
+     "heading": "Resultado"
+    },
+    {
+     "id": "es-fuentes",
+     "heading": "Fuentes"
+    }
+   ]
+  },
+  "sofia-ai-travel-assistant": {
+   "en": [
+    {
+     "id": "en-context",
+     "heading": "Context"
+    },
+    {
+     "id": "en-my-role",
+     "heading": "My role"
+    },
+    {
+     "id": "en-the-problem",
+     "heading": "The problem"
+    },
+    {
+     "id": "en-how-we-worked",
+     "heading": "How we worked"
+    },
+    {
+     "id": "en-key-decisions",
+     "heading": "Key decisions"
+    },
+    {
+     "id": "en-outcome",
+     "heading": "Outcome"
+    },
+    {
+     "id": "en-what-i-learned",
+     "heading": "What I learned"
+    },
+    {
+     "id": "en-sources",
+     "heading": "Sources"
+    }
+   ],
+   "es": [
+    {
+     "id": "es-contexto",
+     "heading": "Contexto"
+    },
+    {
+     "id": "es-mi-rol",
+     "heading": "Mi rol"
+    },
+    {
+     "id": "es-el-problema",
+     "heading": "El problema"
+    },
+    {
+     "id": "es-como-trabajamos",
+     "heading": "Cómo trabajamos"
+    },
+    {
+     "id": "es-decisiones-clave",
+     "heading": "Decisiones clave"
+    },
+    {
+     "id": "es-resultado",
+     "heading": "Resultado"
+    },
+    {
+     "id": "es-que-aprendi",
+     "heading": "Qué aprendí"
+    },
+    {
+     "id": "es-fuentes",
+     "heading": "Fuentes"
+    }
+   ]
+  },
+  "travel-mode": {
+   "en": [
+    {
+     "id": "en-context",
+     "heading": "Context"
+    },
+    {
+     "id": "en-my-role",
+     "heading": "My role"
+    },
+    {
+     "id": "en-the-problem",
+     "heading": "The problem"
+    },
+    {
+     "id": "en-key-decisions",
+     "heading": "Key decisions"
+    },
+    {
+     "id": "en-outcome",
+     "heading": "Outcome"
+    },
+    {
+     "id": "en-sources",
+     "heading": "Sources"
+    }
+   ],
+   "es": [
+    {
+     "id": "es-contexto",
+     "heading": "Contexto"
+    },
+    {
+     "id": "es-mi-rol",
+     "heading": "Mi rol"
+    },
+    {
+     "id": "es-el-problema",
+     "heading": "El problema"
+    },
+    {
+     "id": "es-decisiones-clave",
+     "heading": "Decisiones clave"
+    },
+    {
+     "id": "es-resultado",
+     "heading": "Resultado"
+    },
+    {
+     "id": "es-fuentes",
+     "heading": "Fuentes"
+    }
+   ]
+  }
+ }
+}

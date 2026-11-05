@@ -1,65 +1,59 @@
-import type { Metadata, Viewport } from "next";
-import { Inter, Caveat } from "next/font/google";
-import "./globals.css";
-import Script from "next/script";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  variable: "--font-caveat",
-  weight: ["400", "700"],
-});
+import type { Metadata, Viewport } from 'next';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+import './globals.css';
+import { PrefsProvider, prefsScript } from '@/components/Prefs';
+import { ChatLauncher } from '@/components/ChatLauncher';
+import { Analytics } from '@/components/Analytics';
+import { SITE_URL, site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: "Nacho Iannella - UX Manager & Product Design Leader",
-  description:
-    "UX Manager leading product design strategy at Despegar. Previously at Mercado Libre and Banco Galicia. Focused on Packages, Cart & Cross-selling.",
+  metadataBase: new URL(SITE_URL),
+  title: { default: site.title, template: '%s · Nacho Iannella' },
+  description: site.description,
+  authors: [{ name: site.fullName, url: SITE_URL }],
+  creator: site.name,
+  keywords: ['Nacho Iannella', 'Ignacio Iannella', 'UX Manager', 'Product Design', 'Despegar', 'SOFIA', 'travel e-commerce', 'design leadership', 'Buenos Aires'],
+  alternates: { canonical: '/' },
+  openGraph: { type: 'website', url: SITE_URL, siteName: site.name, title: site.title, description: site.description, locale: 'en_US', alternateLocale: ['es_AR'] },
+  twitter: { card: 'summary_large_image', creator: '@niachito', title: site.title, description: site.description },
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
-  width: "device-width",
-  initialScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f6f4ef' },
+    { media: '(prefers-color-scheme: dark)', color: '#1b1a18' },
+  ],
+  colorScheme: 'dark light',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.fullName,
+  alternateName: site.name,
+  jobTitle: 'UX Manager',
+  worksFor: { '@type': 'Organization', name: 'Despegar' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Buenos Aires', addressCountry: 'AR' },
+  email: `mailto:${site.email}`,
+  url: SITE_URL,
+  sameAs: Object.values(site.links),
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" data-lang="en" data-depth="5" data-theme="dark" suppressHydrationWarning className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
-        <Script id="microsoft-clarity" strategy="beforeInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "vkg5jafljl");
-          `}
-        </Script>
+        <script dangerouslySetInnerHTML={{ __html: prefsScript }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
-      <body
-        className={`${inter.variable} ${caveat.variable} font-sans antialiased`}
-      >
-        {children}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-4NME66BE4L"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-4NME66BE4L');
-          `}
-        </Script>
+      <body className="min-h-dvh bg-bg text-fg">
+        <PrefsProvider>
+          {children}
+          <ChatLauncher />
+        </PrefsProvider>
+        <Analytics />
       </body>
     </html>
   );
