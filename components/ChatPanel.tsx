@@ -8,19 +8,19 @@ type Msg = { who: 'me' | 'bot'; text: string; links?: { title: string; href: str
 
 const UI = {
   en: {
-    title: 'Ask my portfolio', sub: 'Answers come only from this site’s content — no AI, no tracking.',
+    title: 'Ask my portfolio', sub: 'Answers come only from this site’s content, with no AI and no tracking.',
     hello: 'Hi! Ask me about Nacho’s work, how he leads, or how he uses AI.',
     ph: 'e.g. What did he do on SOFIA?', send: 'Ask', more: 'Read more', related: 'Related',
-    miss: 'I couldn’t find that on this site. Try asking about SOFIA, the cart, Travel Mode, leadership or AI — or just email Nacho at ',
+    miss: 'I couldn’t find that on this site. Try asking about SOFIA, the cart, Travel Mode, leadership or AI, or just email Nacho at ',
     pending: 'Nacho is still writing up this part (marked [COMPLETAR] on the site).',
     partial: '([COMPLETAR] = details Nacho is still confirming.)',
     sugg: ['What did he do on SOFIA?', 'How does he lead a team?', 'How does he use AI?', 'Why not pre-select add-ons?', 'How can I contact him?'],
   },
   es: {
-    title: 'Preguntale a mi portfolio', sub: 'Las respuestas salen solo del contenido de este sitio — sin IA, sin tracking.',
+    title: 'Preguntale a mi portfolio', sub: 'Las respuestas salen solo del contenido de este sitio, sin IA y sin tracking.',
     hello: '¡Hola! Preguntame por el trabajo de Nacho, cómo lidera o cómo usa la IA.',
     ph: 'p. ej. ¿Qué hizo en SOFIA?', send: 'Preguntar', more: 'Leer más', related: 'Relacionado',
-    miss: 'No encontré eso en este sitio. Probá preguntar por SOFIA, el carrito, Modo Viaje, liderazgo o IA — o escribile a Nacho a ',
+    miss: 'No encontré eso en este sitio. Probá preguntar por SOFIA, el carrito, Modo Viaje, liderazgo o IA, o escribile a Nacho a ',
     pending: 'Nacho todavía está escribiendo esta parte (marcada como [COMPLETAR] en el sitio).',
     partial: '([COMPLETAR] = detalles que Nacho todavía está confirmando.)',
     sugg: ['¿Qué hizo en SOFIA?', '¿Cómo lidera un equipo?', '¿Cómo usa la IA?', '¿Por qué no preseleccionar add-ons?', '¿Cómo lo contacto?'],

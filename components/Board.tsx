@@ -5,10 +5,10 @@ import { T } from '@/components/T';
 
 const GLYPHS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const STATUS = {
-  shipped: { en: 'SHIPPED', es: 'LANZADO', cls: 'text-[#7ee2a8]' },
-  live: { en: 'IN PROD', es: 'EN PROD', cls: 'text-[#ffb020]' },
-  proto: { en: 'PROTOTYPE', es: 'PROTOTIPO', cls: 'text-[#c4b5fd]' },
-  building: { en: 'BUILDING', es: 'EN OBRA', cls: 'text-[#7dd3fc]' },
+  shipped: { en: 'SHIPPED', es: 'LANZADO', cls: 'text-ok' },
+  live: { en: 'IN PROD', es: 'EN PROD', cls: 'text-accent' },
+  proto: { en: 'PROTOTYPE', es: 'PROTOTIPO', cls: 'text-art-2' },
+  building: { en: 'BUILDING', es: 'EN OBRA', cls: 'text-warn' },
 } as const;
 
 /** Split-flap text: scrambles then settles. Static when reduced motion is on. */
@@ -33,10 +33,10 @@ function Flap({ text, delay }: { text: string; delay: number }) {
 
 export function Board() {
   return (
-    <figure className="rise relative overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0a] text-[#f3f1ea] shadow-2xl shadow-black/20" style={{ animationDelay: '.25s' }}>
+    <figure data-theme="dark" className="rise relative overflow-hidden rounded-2xl border border-white/10 bg-bg text-fg shadow-2xl shadow-black/20" style={{ animationDelay: '.25s' }}>
       <figcaption className="flex items-center justify-between border-b border-white/10 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-[#b8b3a6]">
         <span><T en="Departures · EZE" es="Partidas · EZE" /></span>
-        <span className="flex items-center gap-2"><span className="pulse-dot inline-block size-1.5 rounded-full bg-[#ffb020]" aria-hidden="true" /><T en="Live" es="En vivo" /></span>
+        <span className="flex items-center gap-2"><span className="pulse-dot inline-block size-1.5 rounded-full bg-accent" aria-hidden="true" /><T en="Live" es="En vivo" /></span>
       </figcaption>
       <table className="w-full font-mono text-[13px] sm:text-sm">
         <caption className="sr-only"><T en="Products I have worked on and their status" es="Productos en los que trabajé y su estado" /></caption>

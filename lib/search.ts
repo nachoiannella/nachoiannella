@@ -49,14 +49,14 @@ export function buildDocs(lang: Lang): Doc[] {
   cases.forEach((c) => docs.push({ title: L(c.title), href: `/work/${c.slug}/`, text: `${L(c.dek)} ${L(c.role)}. ${c.highlights.map(L).join(' ')}` }));
   docs.push({ title: L(prototype.title), href: '#prototype', text: `${L(prototype.intro)} ${Object.values(WHY).map((w) => L(w.t)).join(' ')}` });
   docs.push({ title: L(lead.title), href: '#lead', text: `${L(lead.intro)} ${L(lead.team)} ${lead.principles.map((p) => `${L(p.t)}: ${L(p.d)}`).join(' ')} ${L(lead.more)}` });
-  docs.push({ title: `${L(ai.eyebrow)} — ${L(ai.title)}`, href: '#ai', text: `${L(ai.intro)} ${ai.items.map((a) => `${L(a.t)}: ${L(a.d).split(/(?<=\.)\s/)[0]}`).join(' ')}` });
+  docs.push({ title: `${L(ai.eyebrow)} · ${L(ai.title)}`, href: '#ai', text: `${L(ai.intro)} ${ai.items.map((a) => `${L(a.t)}: ${L(a.d).split(/(?<=\.)\s/)[0]}`).join(' ')}` });
   ai.items.forEach((a) => docs.push({ title: `${L(ai.eyebrow)} · ${L(a.t)}`, href: '#ai', text: `${L(a.t)}. ${L(a.d)}` }));
   docs.push({ title: L(pogo.title), href: '#building', kw: 'pogo side project proyecto propio', text: `${L(pogo.eyebrow)}. ${L(pogo.intro)} ${pogo.points.map(L).join(' ')}` });
   docs.push({ title: L(contact.eyebrow), href: '#contact', text: `${L(contact.title)} ${L(contact.sub)} Email: ${site.email}. X: @niachito. LinkedIn: linkedin.com/in/nachoiannella. GitHub: nachoiannella. Medium: @NachoAzulgrana.` });
   for (const ch of (idx as { chunks: { slug: string; lang: string; heading: string; id: string; text: string }[] }).chunks) {
     if (ch.lang !== lang) continue;
     const c = cases.find((x) => x.slug === ch.slug)!;
-    docs.push({ title: `${L(c.title)} — ${ch.heading}`, href: `/work/${ch.slug}/#${ch.id}`, text: ch.text });
+    docs.push({ title: `${L(c.title)} · ${ch.heading}`, href: `/work/${ch.slug}/#${ch.id}`, text: ch.text });
   }
   return docs;
 }

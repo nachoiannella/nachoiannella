@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: c.title.en,
     description: plain(c.dek.en),
     alternates: { canonical: `/work/${c.slug}/` },
-    openGraph: { title: `${c.title.en} · Nacho Iannella`, description: plain(c.dek.en), type: 'article', url: `/work/${c.slug}/`, images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Nacho Iannella — Product design leader in travel e-commerce' }] },
+    openGraph: { title: `${c.title.en} · Nacho Iannella`, description: plain(c.dek.en), type: 'article', url: `/work/${c.slug}/`, images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Nacho Iannella · Product design leader in travel e-commerce' }] },
   };
 }
 

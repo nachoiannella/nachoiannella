@@ -3,7 +3,7 @@ export function CaseArt({ slug, accent }: { slug: string; accent: string }) {
   const s = { '--a': accent } as React.CSSProperties;
   if (slug === 'despegar-cart-cross-sell') {
     return (
-      <div style={s} aria-hidden="true" className="grain relative h-full w-full overflow-hidden p-5">
+      <div style={s} aria-hidden="true" className="relative h-full w-full overflow-hidden p-5">
         <div className="mx-auto flex max-w-[240px] flex-col gap-2">
           {[['✈', 72], ['▣', 58], ['▣', 44], ['◐', 36]].map(([g, w], i) => (
             <div key={i} className="flex items-center gap-2 rounded-lg border border-line bg-card px-2.5 py-2 shadow-sm">
@@ -22,7 +22,7 @@ export function CaseArt({ slug, accent }: { slug: string; accent: string }) {
   }
   if (slug === 'sofia-ai-travel-assistant') {
     return (
-      <div style={s} aria-hidden="true" className="grain relative h-full w-full overflow-hidden p-5">
+      <div style={s} aria-hidden="true" className="relative h-full w-full overflow-hidden p-5">
         <div className="mx-auto flex max-w-[250px] flex-col gap-2">
           <div className="ml-auto rounded-2xl rounded-br-sm bg-fg px-3 py-2 font-mono text-[11px] text-bg">quiero hacer surf 🏄</div>
           <div className="flex items-center gap-1.5">
@@ -47,7 +47,7 @@ export function CaseArt({ slug, accent }: { slug: string; accent: string }) {
     );
   }
   return (
-    <div style={s} aria-hidden="true" className="grain relative h-full w-full overflow-hidden p-5">
+    <div style={s} aria-hidden="true" className="relative h-full w-full overflow-hidden p-5">
       <div className="mx-auto h-full max-w-[150px] rounded-[22px] border-2 border-line bg-card p-2 shadow-sm">
         <div className="flex items-center justify-between px-1">
           <span className="h-1 w-6 rounded-full bg-line" />

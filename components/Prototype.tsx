@@ -148,7 +148,7 @@ export function Prototype() {
         </div>
 
         <div className="rounded-2xl border border-line bg-card p-5" aria-live="polite">
-          <p className="font-mono text-xs uppercase tracking-wider text-accent"><T en="Why — design notes" es="Por qué — notas de diseño" /></p>
+          <p className="font-mono text-xs uppercase tracking-wider text-accent"><T en="Why: design notes" es="Por qué: notas de diseño" /></p>
           <ol className="mt-3 space-y-4">
             {choice.map((c, i) => (
               <li key={i} className="text-[0.95rem] leading-relaxed">

@@ -14,11 +14,10 @@ import type { L } from '@/lib/types';
 
 const Wrap = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => <div className={`mx-auto max-w-6xl px-5 ${className}`}>{children}</div>;
 
-function SectionHead({ eyebrow, title, intro, id }: { eyebrow: L; title: L; intro?: L; id: string }) {
+function SectionHead({ title, intro, id }: { title: L; intro?: L; id: string }) {
   return (
     <div className="max-w-3xl">
-      <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent"><T t={eyebrow} /></p>
-      <h2 id={id} className="mt-3 text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl"><T t={title} /></h2>
+      <h2 id={id} className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl"><T t={title} /></h2>
       {intro ? <p className="mt-5 text-pretty text-lg leading-relaxed text-muted"><T t={intro} /></p> : null}
     </div>
   );
@@ -27,7 +26,6 @@ function SectionHead({ eyebrow, title, intro, id }: { eyebrow: L; title: L; intr
 export function Hero() {
   return (
     <section id="top" aria-labelledby="hero-title" className="relative overflow-hidden">
-      <div className="grain pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(70%_60%_at_30%_30%,black,transparent)]" aria-hidden="true" />
       <Wrap className="relative grid items-center gap-12 pb-16 pt-14 sm:pt-20 lg:grid-cols-[1.45fr_1fr] lg:pb-24 lg:pt-28">
         <div>
           <p className="rise flex flex-wrap items-center gap-x-2.5 gap-y-1 font-mono text-xs uppercase tracking-[0.2em] text-muted">
@@ -51,7 +49,7 @@ export function Hero() {
       </Wrap>
       <Wrap className="relative pb-14">
         <div className="flex flex-col items-start gap-3 border-t border-line pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p id="depth-label" className="text-sm text-muted"><T t={modes.label} /> <span className="font-mono text-xs">— <T en="the page adapts" es="la página se adapta" /></span></p>
+          <p id="depth-label" className="text-sm text-muted"><T t={modes.label} /> <span className="font-mono text-xs">(<T en="the page adapts" es="la página se adapta" />)</span></p>
           <DepthSwitch />
         </div>
       </Wrap>
@@ -64,8 +62,7 @@ export function Tldr() {
     <section id="tldr" aria-labelledby="tldr-title" data-only="30" className="pb-20">
       <Wrap>
         <div className="rounded-3xl border border-line bg-card p-7 shadow-sm sm:p-10">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">TL;DR</p>
-          <h2 id="tldr-title" className="mt-2 text-3xl font-semibold tracking-tight"><T t={tldr.title} /></h2>
+          <h2 id="tldr-title" className="text-3xl font-semibold tracking-tight"><T t={tldr.title} /></h2>
           <ul className="mt-6 grid gap-x-10 gap-y-4 md:grid-cols-2">
             {tldr.items.map((it, i) => (
               <li key={i} className="flex gap-3 text-[1.02rem] leading-relaxed">
@@ -106,7 +103,7 @@ export function Work() {
   return (
     <section id="work" aria-labelledby="work-title" data-min="5" className="border-t border-line py-24">
       <Wrap>
-        <SectionHead id="work-title" eyebrow={{ en: 'Case studies', es: 'Casos' }} title={work.title} intro={work.intro} />
+        <SectionHead id="work-title" title={work.title} intro={work.intro} />
         <ol className="mt-14 grid gap-6 md:grid-cols-3">
           {cases.map((c) => (
             <li key={c.slug} className="group relative flex flex-col overflow-hidden rounded-3xl border border-line bg-card transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-black/5">
@@ -157,7 +154,7 @@ export function PrototypeSection() {
   return (
     <section id="prototype" aria-labelledby="proto-title" data-min="5" className="border-t border-line bg-bg-2/60 py-24">
       <Wrap>
-        <SectionHead id="proto-title" eyebrow={prototype.eyebrow} title={prototype.title} intro={prototype.intro} />
+        <SectionHead id="proto-title" title={prototype.title} intro={prototype.intro} />
         <div className="mt-12"><Prototype /></div>
         <p className="mt-6 font-mono text-xs text-muted"><T t={prototype.disclaimer} /></p>
       </Wrap>
@@ -169,17 +166,16 @@ export function Lead() {
   return (
     <section id="lead" aria-labelledby="lead-title" data-min="5" className="border-t border-line py-24">
       <Wrap>
-        <SectionHead id="lead-title" eyebrow={lead.eyebrow} title={lead.title} intro={lead.intro} />
+        <SectionHead id="lead-title" title={lead.title} intro={lead.intro} />
         <p className="mt-8 max-w-3xl rounded-2xl border border-line bg-card p-5 leading-relaxed"><T t={lead.team} /></p>
-        <ol className="mt-12 grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-12 max-w-4xl divide-y divide-line border-y border-line">
           {lead.principles.map((p) => (
-            <li key={p.k} className="bg-bg p-6">
-              <span className="font-mono text-sm text-accent">{p.k}</span>
-              <h3 className="mt-6 text-xl font-semibold tracking-tight"><T t={p.t} /></h3>
-              <p className="mt-2 leading-relaxed text-muted"><T t={p.d} /></p>
+            <li key={p.k} className="grid gap-1 py-6 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] sm:gap-10">
+              <h3 className="text-xl font-semibold tracking-tight"><T t={p.t} /></h3>
+              <p className="leading-relaxed text-muted"><T t={p.d} /></p>
             </li>
           ))}
-        </ol>
+        </ul>
         <p className="mt-10 text-muted"><T t={lead.more} /> <a href="#contact" className="font-semibold text-accent underline underline-offset-4"><T en="Let’s talk" es="Hablemos" /> →</a></p>
       </Wrap>
     </section>
@@ -188,15 +184,15 @@ export function Lead() {
 
 export function AI() {
   return (
-    <section id="ai" aria-labelledby="ai-title" data-min="5" className="border-t border-line bg-[#0d0d0c] py-24 text-[#f3f1ea]" data-theme="dark">
+    <section id="ai" aria-labelledby="ai-title" data-min="5" className="border-t border-line bg-bg py-24 text-fg" data-theme="dark">
       <Wrap>
-        <SectionHead id="ai-title" eyebrow={ai.eyebrow} title={ai.title} intro={ai.intro} />
+        <SectionHead id="ai-title" title={ai.title} intro={ai.intro} />
         <ul className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {ai.items.map((a, i) => (
             <li key={i} className={`rounded-3xl border border-white/10 bg-white/[0.03] p-6 ${a.tag === 'hardware' ? 'lg:col-span-2' : ''}`}>
-              <span className="rounded-full border border-white/15 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-[#ff8a3d]">{a.tag}</span>
+              <span className="rounded-full border border-white/15 px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-accent">{a.tag}</span>
               <h3 className="mt-5 text-xl font-semibold tracking-tight"><T t={a.t} /></h3>
-              <p className="mt-2 leading-relaxed text-[#b9b4a8]"><T t={a.d} /></p>
+              <p className="mt-2 leading-relaxed text-muted"><T t={a.d} /></p>
             </li>
           ))}
         </ul>
@@ -212,8 +208,7 @@ export function Building() {
     <section id="building" aria-labelledby="b-title" data-min="5" className="border-t border-line py-24">
       <Wrap className="grid items-center gap-12 lg:grid-cols-[1fr_1.25fr]">
         <div>
-          <p className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-accent"><span className="inline-block size-2 rounded-full bg-[#7dd3fc]" aria-hidden="true" /><T t={pogo.eyebrow} /></p>
-          <h2 id="b-title" className="mt-3 text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl"><T t={pogo.title} /></h2>
+          <h2 id="b-title" className="text-balance text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-5xl"><T t={pogo.title} /></h2>
           <p className="mt-5 text-pretty text-lg leading-relaxed text-muted"><T t={pogo.intro} /></p>
           <ul className="mt-6 space-y-3">
             {pogo.points.map((p, i) => <li key={i} className="flex gap-3 leading-relaxed"><span className="text-accent" aria-hidden="true">→</span><span><T t={p} /></span></li>)}
@@ -254,12 +249,11 @@ export function Contact() {
     <section id="contact" aria-labelledby="c-title" className="border-t border-line py-24">
       <Wrap className="grid items-center gap-14 lg:grid-cols-[1.5fr_1fr]">
         <div>
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent"><T t={contact.eyebrow} /></p>
-        <h2 id="c-title" className="mt-3 max-w-4xl text-balance text-[clamp(2.2rem,5.5vw,4.5rem)] font-semibold leading-[1] tracking-[-0.04em]"><T t={contact.title} /></h2>
+        <h2 id="c-title" className="max-w-4xl text-balance text-[clamp(2.2rem,5.5vw,4.5rem)] font-semibold leading-[1] tracking-[-0.04em]"><T t={contact.title} /></h2>
         <p className="mt-5 text-lg text-muted"><T t={contact.sub} /></p>
         <a href={`mailto:${site.email}`} className="mt-10 inline-flex items-center gap-3 rounded-full bg-accent px-7 py-4 text-lg font-semibold text-accent-fg transition-transform hover:-translate-y-0.5">{site.email} <span aria-hidden="true">↗</span></a>
         </div>
-        <PortraitCard caption={<><span className="text-[#ff8a3d]">●</span> Nacho Iannella · Buenos Aires</>} />
+        <PortraitCard caption={<><span className="text-accent">●</span> Nacho Iannella · Buenos Aires</>} />
         <ul className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:col-span-2 lg:grid-cols-[1.45fr_1fr_1fr_1fr_1fr]">
           {links.map((l) => (
             <li key={l.k} className="bg-bg">
@@ -281,7 +275,7 @@ export function Footer() {
     <footer className="border-t border-line py-10 pb-28">
       <Wrap className="flex flex-col gap-3 font-mono text-xs text-muted sm:flex-row sm:justify-between">
         <p>© {new Date().getFullYear()} Ignacio (Nacho) Iannella · Buenos Aires</p>
-        <p><T en="No AI images. No fake logos. Real photo, real facts." es="Sin imágenes de IA. Sin logos falsos. Foto real, datos reales." /></p>
+        <p><T en="The photo is mine and every fact on this site links to its source." es="La foto es mía y cada dato del sitio tiene su fuente." /></p>
       </Wrap>
     </footer>
   );

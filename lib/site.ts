@@ -3,7 +3,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://nachoianne
 export const site = {
   name: 'Nacho Iannella',
   fullName: 'Ignacio (Nacho) Iannella',
-  title: 'Nacho Iannella — Product design leader in travel e-commerce',
+  title: 'Nacho Iannella · Product design leader in travel e-commerce',
   description:
     'UX Manager at Despegar leading design for Packages, Cart & Cross-sell. Designed SOFIA, Despegar’s generative-AI travel assistant, from scratch. Buenos Aires.',
   email: 'nachoiannella@gmail.com',
